@@ -7,8 +7,8 @@ const Menu = withRouter(({history}) => (
       <Link to="/">
           <h1>Home</h1>
       </Link>
-      <Link to="/login">
-        <h1>test</h1>
+      <Link to="/Projects">
+        <h1>Projects</h1>
       </Link>
     </div>
 ))

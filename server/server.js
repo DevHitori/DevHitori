@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express = require('express');
 var router = require('./routes/routes.js');
 var path = require('path');
@@ -15,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 
-mongoose.connect('mongodb://User:Pass@cluster0-shard-00-00-orr3i.mongodb.net:27017/Server?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', {useNewUrlParser: true});
+mongoose.connect(process.env.DB, {useNewUrlParser: true});
 let db = mongoose.connection;
 
 db.on('open', () => {

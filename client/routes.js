@@ -1,8 +1,8 @@
 //client/routes.js
 import React, {Component} from 'react'
 import { Route, Switch } from 'react-router-dom';
-import App from './components/app';
-import Lwd from './components/LWD';
+import Home from './components/Home';
+import Projects from './components/Projects';
 
 class Routes extends Component {
 
@@ -10,8 +10,8 @@ class Routes extends Component {
   return (
     <div>
       <Switch>
-        <Route exact path='/' component={App} />
-        <Route path='/login' component={Lwd} />
+        <Route exact path='/' component={Home} />
+        <Route path='/Projects' component={Projects} />
       </Switch>
     </div>
     )
