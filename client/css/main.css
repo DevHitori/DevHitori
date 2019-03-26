@@ -103,7 +103,7 @@ footer .container {
   width: 100%
 }
 
-#infoMsg{
+.infoMsg{
   display: inline-block;
   position:absolute;
   width: 100%;

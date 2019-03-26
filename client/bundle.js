@@ -34828,6 +34828,11 @@ var Home = function (_React$Component) {
               ' ',
               visits
             )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'infoMsg' },
+            'This Website is currently under construction.'
           )
         );
       }

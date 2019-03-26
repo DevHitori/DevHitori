@@ -64,6 +64,7 @@ export default class Home extends React.Component{
        <div>
        <ProgressBar className="loadingBar"  striped animated now={87} label={`87%`}/>;
        <div className="visits"><h1><i class="fas fa-eye"></i> {visits}</h1></div>
+       <p className="infoMsg" >This Website is currently under construction.</p>
        </div>
      )
 
