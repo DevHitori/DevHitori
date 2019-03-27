@@ -1,4 +1,4 @@
-��# DevHitori
+# DevHitori
 
 [www.devhitoti.com](https://devhitori.com).
 
