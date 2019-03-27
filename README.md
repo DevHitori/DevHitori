@@ -1,6 +1,6 @@
 # DevHitori
 
-[www.devhitoti.com](https://devhitori.com).
+[DevHitoti.com](http://devhitori.com).
 
 #### To-Do-List
 
