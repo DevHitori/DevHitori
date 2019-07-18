@@ -28,20 +28,20 @@ export default class Home extends React.Component{
       unique=true;
     }
 
-    axios.get(`/api/visits?unique=${unique}`)
-      .then(response => {
-        this.setState({
-          visits: response.data.visits,
-          unique_visits: response.data.unique_visits,
-          isLoading: false});
-      })
-      .catch(error => {
-        this.setState({
-          visits: -1,
-          unique_visits: -1,
-          isLoading: false});
-        console.log(error)
-      });
+    // axios.get(`/api/visits?unique=${unique}`)
+    //   .then(response => {
+    //     this.setState({
+    //       visits: response.data.visits,
+    //       unique_visits: response.data.unique_visits,
+    //       isLoading: false});
+    //   })
+    //   .catch(error => {
+    //     this.setState({
+    //       visits: -1,
+    //       unique_visits: -1,
+    //       isLoading: false});
+    //     console.log(error)
+    //   });
 
   }
 
