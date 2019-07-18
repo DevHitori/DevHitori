@@ -16,7 +16,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 
 // mongoose.connect(process.env.DB, {useNewUrlParser: true});
-mongoose.connect('mongodb+srv://Discord:ieQTvpPBftEZpvnl@cluster0-4w1ts.mongodb.net/testingPaypal3?retryWrites=true&w=majority', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://Lucille:Shop@cluster0-2fvrv.mongodb.net/Shop?retryWrites=true&w=majority', {useNewUrlParser: true});
 
 let db = mongoose.connection;
 
