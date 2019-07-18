@@ -57,7 +57,7 @@ Order.findOneAndUpdate(
 
 
    // mongoose.connect(process.env.DB, {useNewUrlParser: true});
-    res.redirect('https://static1.squarespace.com/static/5a1ffcef4c0dbf776ccbc5a1/t/5b7c2b731ae6cfc624e96c48/1534864255487/Payment+successful+2+%281%29.png?format=1500w')
+    res.send('Successfully Paid')
 });
 }
 });
