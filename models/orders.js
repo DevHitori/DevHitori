@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 
-const ordersSchema = mongoose.Schema({
+const NewOrdersSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  userID: {type: String, required: true},
-  gamename:{type:String},
+  discordID: {type: String, required: true},
+  discordName: {type: String, required:true},
+  ign:{type:String},
   facebookId: {type:String},
   facebookPass: {type:String},
   authenCode:{type:String},
@@ -12,7 +13,9 @@ const ordersSchema = mongoose.Schema({
   mediumPacks: {type: String, default: null},
   paid: {type: Boolean, required: true},
   paymentdetails:{type: Object, default: null},
-  paymentID:{type: String, default: null}
+  typeOfLarge:{type: String},
+  typeOfMedium:{type: String},
+  timeStamps: {type:Object, required: true}
 });
 
-module.exports = mongoose.model("orders", ordersSchema);
+module.exports = mongoose.model("new_orders", NewOrdersSchema);
